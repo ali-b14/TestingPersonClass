@@ -95,4 +95,9 @@ public class TestPerson {
         Integer actual = person.getAge();
         Assert.assertEquals(expected, actual);
     }
+
+    @Test
+    public void name() {
+    }
 }
+
