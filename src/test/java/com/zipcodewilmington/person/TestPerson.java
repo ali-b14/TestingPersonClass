@@ -97,7 +97,70 @@ public class TestPerson {
     }
 
     @Test
-    public void name() {
+    public void testSetHairColor() {
+        // Given
+        Person person = new Person();
+        String expected = "black";
+
+        // When
+        person.setHairColor(expected);
+
+        // Then
+        String actual = person.getHairColor();
+        Assert.assertEquals(expected, actual);
     }
+    @Test
+    public void testSetEyeColor() {
+        // Given
+        Person person = new Person();
+        String expected = "blue";
+
+        // When
+        person.setEyeColor(expected);
+
+        // Then
+        String actual = person.getEyeColor();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testfacialHair() {
+        // Given
+        Person person = new Person();
+        boolean expected = true;
+
+        // When
+        person.setFacialHair(expected);
+
+        // Then
+        boolean actual = person.isFacialHair();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetGender() {
+        // Given
+        Person person = new Person();
+        String expected = "Male";
+
+        // When
+        person.setGender(expected);
+
+        // Then
+        String actual = person.getGender();
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void testSetBirthMonth() {
+        // Given
+        Person person = new Person();
+        String expected = "March";
+
+        // When
+        person.setBirthMonth(expected);
+
+        // Then
+        String actual = person.getBirthMonth();
+        Assert.assertEquals(expected, actual);
+    }
+
 }
 
