@@ -6,6 +6,13 @@ package com.zipcodewilmington.person;
 public class Person {
     private String name;
     private int age;
+    private String hairColor;
+    private String eyeColor;
+    private boolean facialHair;
+    private String gender;
+    private String birthMonth;
+
+
 
     public Person() {
     }
@@ -26,10 +33,12 @@ public class Person {
     }
 
     public String getName() {
+
         return null;
     }
 
     public Integer getAge() {
+
         return null;
     }
 }
